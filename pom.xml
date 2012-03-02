@@ -6,20 +6,12 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-    <camel.version>2.9.0</camel.version>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.apache.camel</groupId>
       <artifactId>camel-jetty</artifactId>
-      <version>${camel.version}</version>
-      <exclusions>
-        <exclusion>
-          <artifactId>geronimo-servlet_2.5_spec</artifactId>
-          <groupId>org.apache.geronimo.specs</groupId>
-        </exclusion>
-      </exclusions>
+      <version>2.9.0</version>
     </dependency>
   </dependencies>
 

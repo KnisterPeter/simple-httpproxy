@@ -29,7 +29,7 @@ public class Main {
             }
           })
           .choice()
-            .when(header("proxy").isEqualTo("true")).to("http://localhost/")
+            .when(header("proxy").isEqualTo("true")).to("http://localhost/?throwExceptionOnFailure=false&httpClient.cookiePolicy=ignoreCookies")
           .end();
         // @formatter:on
       }
